@@ -5,3 +5,24 @@ A: It creates metadata in the .git directory.
 Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 The staging area shows the files that you've either changed or added and will be committing to git.  It allows you to identify exactly which files will be updated/added in the commit.
+
+Q: How can you use the staging area to make sure you have one commit per logical change?
+
+Only do a "git add" for files that are associated with a logical change.
+
+Q: What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Creating different flavors of a program.  Trying an experimental change.
+
+Q: How do the diagrams help you visualize the branch structure?
+
+Allows you to see the parent of each commit, and thus what shows up in "git log."  Also tells you which commits will be lost.
+
+Q: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Commit histories are combined, and file contents are merged.  We represent in the diagram that way to show the separate histories.
+
+Q: What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+Pros: handles trivial merges automatically
+Cons: may result in unintended consequences
